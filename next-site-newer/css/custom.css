@@ -1,0 +1,318 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+ul.nav, .jumbotron h1  {
+	font-family: 'Arvo', courier, serif;
+}
+
+.jumbotron {
+	background-image: url("../images/net_neutrality.jpeg"); 
+	text-align: center;
+	height: 100%;
+	background-size: cover;
+	margin-bottom: 0;	
+	background-repeat: no-repeat;
+}
+
+.jumbotron h1 {
+	margin-top: 0px;
+	margin-bottom: 50px;
+	visibility: hidden;
+}
+
+.jumbotron p {
+	margin-bottom: 100px;
+	font-weight: 50;
+	padding: 0 50px;
+	visibility: hidden;
+}
+
+.jumbotron .btn-lg {
+	height: 60px;
+	padding-top: 5px;
+	font-size: 25px;
+}
+
+.jumbotron .form-control {
+	height: 60px;
+	font-size: 33px;
+}
+
+ul.nav {
+	font-size: 16px;
+}
+
+img.logo {
+	margin-top: 15px;
+}
+
+footer {
+	background-color: #3c5097;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	position: relative;
+	color: white;
+	text-transform: uppercase;
+}	
+	
+#makeithappen {
+	background-color: #f5f5f5;
+	padding-top: 10px;
+	padding-bottom: 90px;
+}
+
+#themission {
+	background-color: #fff;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+#back-to-top {
+	position: absolute;
+	bottom: 60px;
+	right: 20px;
+
+}
+
+#back-to-top a {
+	color: #333;
+}
+
+.modal-content iframe {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: blue;
+}
+
+.modal-content button.close {
+	position: absolute;
+	font-size: 26px;
+	top: 5px;
+	right: 5px;
+	background-color: white;
+	width: 30px;
+	opacity: 1;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+}
+
+/* HOW WE CENTER ABSOLUTE BLOCK ELEMENTS HORIZONTALLY (X-AXIS) AND VERTICALLY (Y-AXIS) */
+.modal-dialog {
+	position: absolute;
+	left: 50%;
+	margin-left: -300px; /* THIS IS HALF OF DIALOG WIDTH */
+	top: 50%;
+	margin-top: -173px; /* THIS IS HALF OF DIALOG HEIGHT */
+/* PARENT ELEMENT MUST HAVE ANY POSITION OTHER THAN STATIC */
+}
+
+.btn-lg {
+	font-size: 36px;
+	opacity: .9;
+	background-color: #b82b1f;
+}
+
+.btn-lg:hover {
+	font-weight: bold;
+	opacity: 1;
+	
+}
+
+.homepage {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.homepage h2 {
+	color: #3c5097;
+	font-family: 'Arvo', courier, serif;
+	text-transform: uppercase;
+}
+
+.homepage h2 {
+	font-size: 30px;
+}
+
+.homepage hr {
+	border-top: 1px solid #3c5097;
+	margin-top: 15px;
+	width: 160px;
+}
+
+.homepage h3 {
+	font-size: 26px;
+	color: #3c5097;
+	font-family: 'Open Sans', courier, sans-serif;
+	text-transform: uppercase;
+}
+
+.homepage p {
+	font-weight: 300;
+	font-size: 21px;
+}
+
+.homepage a.btn {
+	margin-bottom: 35px;
+}
+
+.homepage a {
+	font-weight: 500;
+	opacity: .9;
+	min-width: 48px;
+	
+}
+
+.homepage a.green {
+	background-color: #51873e;
+	color: white;
+}
+
+.homepage a.yellow {
+	background-color: #e6c62c;
+	color: white;
+}
+
+.homepage a.red {
+	background-color: #b82b1f;
+	color: white;
+}
+
+.homepage a:hover {
+	text-decoration: none;
+	opacity: 1;
+	font-weight: bold;
+	color: white;
+	font-size: 0.82em;
+}
+
+i.green {
+	color: #51873e;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+i.yellow {
+	color: #e6c62c;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+i.red {
+	color: #b82b1f;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#row .fa {
+	color: orange;
+}
+
+
+
+/* Responsive Styling to make sure everything remains above the fold when resized*/
+/*@media (max-width: 2600px) {
+	.jumbotron {
+		padding-bottom: 15%;
+	}
+
+}*/
+
+
+
+@media (max-width: 1299px) { 
+
+	.jumbotron h1 {
+		font-size: 56px;
+		margin-bottom: 0px; /* was 30px */
+		margin-right: 0px;
+	}
+ }
+
+
+
+/*PROBLEM IS AT 992-*/
+
+
+ @media (max-width: 991px) { 
+
+	
+
+	.jumbotron h1 {
+		font-size: 44px;
+		margin-right: 0px;
+	}
+
+	.jumbotron p {
+		padding: 0 10px;
+	}
+
+	#get-involved .col-md-4 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.btn-lg {
+
+         font-size: 20px;
+	}
+
+	.jumbotron .form-control {
+	height: 55px;
+	font-size: 25px;
+	width: 50%;
+	text-align: left;
+	margin-left: 25%;
+	
+	}
+
+@media (max-width: 767px) { 
+
+	.jumbotron h1 {
+		font-size: 24px;
+		padding-top: 24px;/* I did this */
+	}
+
+	.jumbotron p {
+		padding: 0;
+		font-size: 16px;
+	}
+
+	.btn-lg {
+		font-size: 18px;
+	}
+
+	.homepage h3 {
+		margin-top: 5px;
+	}
+
+	.homepage a.yellow, a.green, a.red, {
+		margin-bottom: 25px; /* I did this */
+	} 
+
+	.homepage p {
+		font-size: 18px;
+	}
+
+	footer img {
+		width: 80%;
+	}
+
+}
+
+@media (max-width: 410px) {
+  
+
+	 .col-md-9 {
+          width: 100%;
+	}
+	
+
+   }
+
+
+
